@@ -74,6 +74,26 @@ public:
         Node* temp = tail;
         temp->next = tail;
     }
+
+    void find(int val)
+    {
+        Node* temp = head;
+        
+        int i = 1;
+        while (temp != NULL)
+        {
+            if (temp->data == val)
+            {
+                cout << "The element is present at " << i << "th place";
+                return;
+            }
+            else
+            {
+                i++;
+                temp = temp->next;
+            }
+        }
+    }
     
     void Print_ll()
     {
