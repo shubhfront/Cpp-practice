@@ -15,15 +15,12 @@ int main()
     for (int n = 0; n < len; n++)
     {
         int i = s[n] - '0';
-        cout << i << endl;
         if (i != 0)
         {
             oddNum = (oddNum * multiple) + i;
-            cout << oddNum << "in odd num " << endl;
         }
         
     }
-    cout << "OddNum " << oddNum << endl;
     if (oddNum % 2 !=0)
     {
         cout << "The final number is: " << oddNum;
